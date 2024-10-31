@@ -1,0 +1,86 @@
+
+/* **************************************************** */
+/* NavBar */
+$nav-font: "Poppins", sans-serif;
+$brand-font: "Inter", sans-serif;
+$nav-bg-color: white !important;
+$nav-link-hover-bg: #1bbca3;
+$nav-link-hover-color: white;
+$active-bg-color: #1bbca3;
+$active-color: white;
+$nav-text-color: black;
+$navbar-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+$navbar-padding: 15px 0;
+
+@mixin navbar-link-styles {
+  font-family: $nav-font;
+  padding: 10px 15px !important;
+  margin-left: 2px;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  transition: 0.3s;
+  color: $nav-text-color;
+
+  &:hover {
+    background-color: $nav-link-hover-bg;
+    color: $nav-link-hover-color;
+  }
+}
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  box-shadow: $navbar-shadow;
+  padding: $navbar-padding;
+
+  .navbar-brand {
+    font-family: $brand-font;
+    font-size: 31px;
+    margin: 0;
+    font-weight: 700;
+    color: #384f4b;
+    padding: 0;
+  }
+
+  .nav-link {
+    @include navbar-link-styles;
+  }
+
+  .navbar-nav .nav-item a.active {
+    background-color: $active-bg-color;
+    color: $active-color;
+  }
+}
+
+.bg-body-tertiary {
+  background-color: $nav-bg-color;
+}
+
+.dropdown {
+  &:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+
+  .dropdown-submenu {
+    position: relative;
+
+    &:hover > .dropdown-menu {
+      display: block;
+      left: -100%;
+      top: 0;
+      margin-top: 0;
+    }
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+}

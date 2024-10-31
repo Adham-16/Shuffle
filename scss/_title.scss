@@ -1,0 +1,26 @@
+/* for any  title*/
+
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.section-title h2 {
+  font-weight: 700;
+  color: #384f4b;
+}
+.section-title h2::before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #1bbca3;
+  display: inline-block;
+  margin: 0 15px 10px 0;
+}
+.section-title h2::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #1bbca3;
+  display: inline-block;
+  margin: 0 0 10px 15px;
+}

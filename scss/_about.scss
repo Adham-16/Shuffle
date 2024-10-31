@@ -1,0 +1,46 @@
+/* ***************************** */
+
+.about {
+  .content {
+    .read-more {
+      color: $color-white;
+      background: $color-primary;
+      font-family: $font-secondary;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 1px;
+      padding: 12px 24px;
+      border-radius: 5px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all $transition;
+
+      &:hover {
+        background: color-mix(in srgb, $color-primary, black 20%);
+        padding-right: 19px;
+
+        i {
+          margin-left: 10px;
+        }
+      }
+
+      i {
+        transition: all $transition;
+      }
+    }
+  }
+}
+
+i.fa-regular.fa-circle-check {
+  color: $color-primary;
+  font-size: 22px;
+}
+
+.container {
+  div.content {
+    h3.fw-bolder.fa-2x {
+      color: $color-dark;
+    }
+  }
+}

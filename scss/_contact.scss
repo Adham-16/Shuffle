@@ -1,0 +1,105 @@
+/* ***************************** */
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Inter", sans-serif;
+$font-nav: "Poppins", sans-serif;
+
+$color-primary: #1bbca3;
+$color-dark: #384f4b;
+$color-light: #f2f5f4;
+$color-gray: #444444;
+$color-white: #fff;
+
+$shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+$transition: 0.3s;
+
+.contact {
+  .info-item {
+    background: color-mix(in srgb, $color-gray, transparent 96%);
+    padding: 30px;
+
+    i {
+      font-size: 38px;
+      line-height: 0;
+      color: $color-primary;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 20px 0 10px 0;
+    }
+
+    p {
+      padding: 0;
+      line-height: 24px;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+
+  .php-email-form {
+    background: color-mix(in srgb, $color-gray, transparent 96%);
+    padding: 30px;
+    height: 100%;
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      font-size: 14px;
+      padding: 10px 15px;
+      box-shadow: none;
+      border-radius: 0;
+      color: $color-gray;
+      background-color: color-mix(in srgb, $color-white, transparent 50%);
+      border-color: color-mix(in srgb, $color-gray, transparent 80%);
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    textarea::placeholder {
+      color: color-mix(in srgb, $color-gray, transparent 80%);
+    }
+
+    .loading {
+      display: none;
+      background: $color-light; 
+      text-align: center;
+      padding: 15px;
+      margin-bottom: 24px;
+    }
+
+    .error-message {
+      display: none;
+      background: #df1529;
+      color: $color-white;
+      text-align: left;
+      padding: 15px;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+
+    .sent-message {
+      display: none;
+      color: $color-white;
+      background: #059652;
+      text-align: center;
+      padding: 15px;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+
+    button[type="submit"] {
+      background: $color-primary;
+      color: $color-white;
+      border: 0;
+      padding: 10px 30px;
+      transition: $transition;
+      border-radius: 4px;
+      &:hover {
+            background: 
+color-mix(in srgb, $color-primary, transparent 20%);
+      }
+    }
+
+  }
+}

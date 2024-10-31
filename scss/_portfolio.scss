@@ -1,0 +1,125 @@
+// Define Variables
+$color-primary: #1bbca3;
+$color-dark: #444444;
+$color-white: #fff;
+$color-gray: rgba(255, 255, 255, 0.8);
+$color-background: #fff;
+$color-overlay: rgba(0, 0, 0, 0.6);
+$font-size-base: 18px;
+$font-size-large: 26px;
+$font-size-xlarge: 34px;
+$font-size-small: 14px;
+$padding-base: 60px 0;
+$transition: 0.3s ease-in-out;
+/* ***************************** */
+
+// Section Styles
+section,
+.section {
+  color: $color-dark;
+  background-color: $color-background;
+  padding: $padding-base;
+  scroll-margin-top: 74px;
+  overflow: clip;
+}
+
+// Portfolio Styles
+.portfolio {
+  .portfolio-filters {
+    padding: 0;
+    margin: 0 auto 20px;
+    list-style: none;
+    text-align: center;
+
+    li {
+      cursor: pointer;
+      display: inline-block;
+      padding: 0;
+      font-size: $font-size-base;
+      font-weight: 500;
+      margin: 0 10px;
+      line-height: 1;
+      margin-bottom: 5px;
+      transition: $transition;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover,
+      &.filter-active {
+        color: $color-primary;
+      }
+    }
+  }
+
+  .isotope-container,
+  .portfolio-content {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      transition: $transition;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .portfolio-info {
+      opacity: 0;
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      transition: $transition;
+      background: $color-overlay;
+      padding: 15px;
+
+      h4 {
+        font-size: $font-size-small;
+        padding: 5px 10px;
+        font-weight: 400;
+        color: $color-white;
+        display: inline-block;
+        background-color: $color-primary;
+      }
+
+      p {
+        position: absolute;
+        bottom: 10px;
+        text-align: center;
+        display: inline-block;
+        left: 0;
+        right: 0;
+        font-size: $font-size-base;
+        font-weight: 600;
+        color: $color-gray;
+      }
+
+      .preview-link,
+      .details-link {
+        position: absolute;
+        left: calc(50% - 40px);
+        font-size: $font-size-large;
+        top: calc(50% - 14px);
+        color: $color-white;
+        transition: $transition;
+        line-height: 1.2;
+
+        &:hover {
+          color: $color-primary;
+        }
+
+        &.details-link {
+          left: 50%;
+          font-size: $font-size-xlarge;
+          line-height: 0;
+        }
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

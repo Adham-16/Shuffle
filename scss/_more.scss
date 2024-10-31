@@ -1,0 +1,40 @@
+/* ***************************** */
+#more-services {
+  color: $color-gray;
+  background-color: $color-white;
+  padding: 60px 0;
+  scroll-margin-top: 74px;
+  overflow: clip;
+
+  .card {
+    background-color: $color-white;
+    color: $color-gray;
+    padding: 30px;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: $transition;
+    height: 100%;
+    border: 0;
+
+    &:hover {
+      box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+      img {
+        transform: scale(1);
+      }
+    }
+
+    img {
+      padding: 0;
+      transition:all 0.5s;
+      transform: scale(1.1);
+      
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 30px;
+      margin-bottom: 18px;
+    }
+  }
+}

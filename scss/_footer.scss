@@ -1,0 +1,152 @@
+/* ***************************** */
+.footer {
+  color: $color-white;
+  background-color: #0e1a18;
+  font-size: 14px;
+  padding-bottom: 50px;
+  position: relative;
+
+  .footer-top {
+    padding-top: 50px;
+    border-top: 1px solid color-mix(in srgb, $color-white, transparent 90%);
+  }
+
+  .footer-about {
+    .logo {
+      line-height: 1;
+      margin-bottom: 25px;
+
+      span {
+        color: $color-white;
+        font-size: 31px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-family: $font-secondary;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      font-family: $font-secondary;
+    }
+  }
+
+  .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, $color-white, transparent 50%);
+    font-size: 16px;
+    color: color-mix(in srgb, $color-white, transparent 50%);
+    margin-right: 10px;
+    transition: $transition;
+    &:hover{
+            color: $active-bg-color;
+                border-color: $active-bg-color;
+          }
+  }
+
+  .footer-links {
+    margin-bottom: 30px;
+
+    h4 {
+      font-size: 16px;
+      font-weight: bold;
+      position: relative;
+      padding-bottom: 12px;
+      color: $color-white;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+
+        &:first-child {
+          padding-top: 0;
+        }
+
+        a {
+          color: color-mix(in srgb, $color-white, transparent 20%);
+          display: inline-block;
+          line-height: 1;
+          
+        }
+      }
+    }
+  }
+
+  .footer-contact p {
+    margin-bottom: 5px;
+  }
+
+  .copyright {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: color-mix(in srgb, $color-white, transparent 95%);
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .credits {
+    margin-top: 6px;
+    font-size: 13px;
+
+    a {
+      color: $color-primary;
+      transition: all 0.3s;
+
+      &:hover {
+        color: color-mix(in srgb, $color-primary, transparent 25%);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.scroll-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background-color: $color-primary;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+
+  i {
+    font-size: 24px;
+    color: $color-white;
+    line-height: 0;
+  }
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+.dropdown-toggle::after {
+  visibility: hidden;
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  .carousel-caption .carousel-header {
+    font-size: 30px;
+  }
+  .carousel-caption p.text-start {
+    width: 110% !important;
+  }
+}

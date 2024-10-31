@@ -1,0 +1,41 @@
+/* ***************************** */
+
+#stats {
+  &.section {
+    color: $color-dark;
+    background-color: $color-light;
+    padding: 60px 0;
+    scroll-margin-top: 74px;
+    overflow: clip;
+  }
+
+  .stats-item {
+    padding: 30px;
+    width: 100%;
+
+    i {
+      color: $color-primary;
+      display: block;
+      font-size: 44px;
+      float: left;
+      line-height: 0;
+    }
+
+    .purecounter {
+      color: $color-dark;
+      font-size: 48px;
+      line-height: 40px;
+      display: block;
+      font-weight: 700;
+      margin-left: 60px;
+    }
+
+    p {
+      color: color-mix(in srgb, $color-gray, transparent 40%);
+      padding: 15px 0 0 0;
+      margin: 0 0 0 60px;
+      font-family: $font-secondary;
+      font-size: 14px;
+    }
+  }
+}

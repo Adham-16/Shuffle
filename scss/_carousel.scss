@@ -1,0 +1,55 @@
+/* **************************************************** */
+
+#carouselExampleCaptions {
+  height: 100vh;
+  width: 100%;
+}
+
+.carousel-item {
+  height: 100vh;
+  will-change: opacity, transform;
+}
+
+.carousel-fade {
+  .carousel-item {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}
+
+.carousel-caption {
+  top: 30% !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+
+  .started {
+    color: $color-white;
+    background: $color-primary;
+    font-family: $font-secondary;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 8px 32px;
+    border-radius: 50px;
+    margin: 10px;
+  }
+}
+
+.carouselCaptions {
+  .carousel-inner {
+    .carousel-item {
+      h5 {
+        color: $color-white;
+      }
+
+      a:hover {
+        background: color-mix(in srgb, $color-primary, transparent 20%);
+      }
+    }
+  }
+}

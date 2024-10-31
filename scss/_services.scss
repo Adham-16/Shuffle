@@ -1,0 +1,66 @@
+
+/* ***************************** */
+
+#services {
+  &.section {
+    color: $color-dark;
+    background-color: $color-white;
+    padding: 60px 0;
+    scroll-margin-top: 74px;
+    overflow: clip;
+  }
+
+  .service-item {
+    background-color: $color-white;
+    box-shadow: $shadow;
+    padding: 50px 30px;
+    transition: all $transition ease-in-out;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $color-primary;
+      inset: 100% 0 0 0;
+      transition: all $transition;
+      z-index: -1;
+    }
+
+    &:hover::before {
+      inset: 0;
+    }
+
+    .icon {
+      margin-bottom: 10px;
+
+      i {
+        color: $color-primary;
+        font-size: 36px;
+        transition: ease-in-out $transition;
+      }
+    }
+
+    h4 {
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 20px;
+
+      a {
+        color: $color-dark;
+        transition: ease-in-out $transition;
+
+        &:hover {
+          color: color-mix(in srgb, $color-primary, transparent 25%);
+        }
+      }
+    }
+
+    &:hover h4 a,
+    &:hover .icon i,
+    &:hover p {
+      color: $color-white;
+    }
+  }
+}
