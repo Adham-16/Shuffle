@@ -113,6 +113,10 @@ nav.navbar .navbar-nav .nav-item a.active {
   display: none;
 }
 
+.dropdown .dropdown-submenu:hover > .dropdown-menu {
+  left: -90%;
+}
+
 /* **************************************************** */
 #carouselExampleCaptions {
   height: 100vh;

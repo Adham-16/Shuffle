@@ -84,3 +84,6 @@ nav.navbar {
     display: none;
   }
 }
+.dropdown .dropdown-submenu:hover > .dropdown-menu {
+    left: -90%;
+}
